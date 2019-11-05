@@ -1,0 +1,72 @@
+// JSON Document
+[
+	{
+		"Song Title" : "Firework",
+		"Artist" : ["Katy Perry"],
+		"Genre" : ["Pop"],
+		"Year": 2010
+	},
+
+	{
+		"Song Title" : "Can You Feel the Love Tonight",
+		"Artist" : ["Elton John"],
+		"Genre" : ["Soft Rock"],
+		"Year": 1994
+	},
+	
+	{
+		"Song Title" : "Somewhere Over the Rainbow",
+		"Artist" : ["Israel Kamakawiwoʻole"],
+		"Genre" : ["Hawaiin"],
+		"Year": 1990
+	},
+
+	{
+		"Song Title" : "Starman",
+		"Artist" : ["David Bowie"],
+		"Genre" : ["Glam Rock"],
+		"Year": 1972
+	},
+	
+	{
+		"Song Title" : "Hips Don't Lie",
+		"Artist" : ["Shakira"],
+		"Genre" : ["Pop"],
+		"Year": 2005
+	},
+
+	{
+		"Song Title" : "Space Oddity",
+		"Artist" : ["David Bowie"],
+		"Genre" : ["Pop"],
+		"Year": 1969
+	},
+	
+	{
+		"Song Title" : "Benny and the Jets",
+		"Artist" : ["Elton John"],
+		"Genre" : ["Pop"],
+		"Year": 2000
+	},
+
+	{
+		"Song Title" : "This Train Don't Stop There Anymore",
+		"Artist" : ["Elton John"],
+		"Genre" : ["Adult Contemporary"],
+		"Year": 2001
+	},
+	
+	{
+		"Song Title" : "Toxic",
+		"Artist" : ["Britney Spears"],
+		"Genre" : ["Pop"],
+		"Year": 2003
+	},
+
+	{
+		"Song Title" : "Oops! ... I Did It Again",
+		"Artist" : ["Britney Spears"],
+		"Genre" : ["Pop"],
+		"Year": 2000
+	}
+]
