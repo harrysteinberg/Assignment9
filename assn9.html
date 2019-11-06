@@ -3,8 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <title>assn9</title>
+	
+	<style>
+		p{
+			text-align: center;
+		}
+	
+	
+	</style>
 </head>
 
 <body>
+	
+<script language="javascript"> 
+	
+	// Part 1: Create a JSON Setlist object
+		setlist = [
+			{
+				"Song Title" : 'Firework',
+				"Artist" : ["Katy Perry"],
+				"Genre" : ["Pop"],
+				"Year": 2010
+			},
+
+			{
+				"Song Title" : "Can You Feel the Love Tonight",
+				"Artist" : ["Elton John"],
+				"Genre" : ["Soft Rock"],
+				"Year": 1994
+			},
+
+			{
+				"Song Title" : "Somewhere Over the Rainbow",
+				"Artist" : ["Israel Kamakawiwoʻole"],
+				"Genre" : ["Hawaiin"],
+				"Year": 1990
+			},
+
+			{
+				"Song Title" : "Starman",
+				"Artist" : ["David Bowie"],
+				"Genre" : ["Glam Rock"],
+				"Year": 1972
+			},
+
+			{
+				"Song Title" : "Hips Don't Lie",
+				"Artist" : ["Shakira"],
+				"Genre" : ["Pop"],
+				"Year": 2005
+			},
+
+			{
+				"Song Title" : "Space Oddity",
+				"Artist" : ["David Bowie"],
+				"Genre" : ["Pop"],
+				"Year": 1969
+			},
+
+			{
+				"Song Title" : "Benny and the Jets",
+				"Artist" : ["Elton John"],
+				"Genre" : ["Pop"],
+				"Year": 2000
+			},
+
+			{
+				"Song Title" : "This Train Don't Stop There Anymore",
+				"Artist" : ["Elton John"],
+				"Genre" : ["Adult Contemporary"],
+				"Year": 2001
+			},
+
+			{
+				"Song Title" : "Toxic",
+				"Artist" : ["Britney Spears"],
+				"Genre" : ["Pop"],
+				"Year": 2003
+			},
+
+			{
+				"Song Title" : "Oops! ... I Did It Again",
+				"Artist" : ["Britney Spears"],
+				"Genre" : ["Pop"],
+				"Year": 2000
+			}
+		]
+	
+	// Part 2: Display the serialized JSON object
+	strSetlist = JSON.stringify(setlist);
+	document.write(strSetlist + "<br>" + "<br>")
+	
+	// Part 3: Display a user friendly setlist
+	for(i in setlist){
+		 song = setlist[i];
+		
+		title = song["Song Title"];
+		artist = song["Artist"];
+		genre = song["Genre"];
+		year = song["Year"];
+		
+		
+		document.write("<p>" + title + "</p>");
+		document.write("<p>" + artist + "</p>");
+		document.write("<p>" + genre + "</p>");
+		document.write("<p>" + year + " <br> <br> </p>");
+		
+	}
+	
+	
+	
+	</script>
+	<p>
+	Choose a genre to display: 
+	<select id="genreDisplay" onchange="change_genreDisplay(this.value)">
+	<option value ="">Choose a genre: </option>	
+	<option value="Pop"> Pop </option>
+	<option value="Soft Rock"> Soft Rock </option>
+	<option value="Hawaiin"> Hawaiin </option>
+	<option value="Glam Rock"> Glam Rock </option>
+	<option value="Adult Contemporary"> Adult Contemporary </option>
+	</select>
+	
+	</p>
+	
+	
+	<script language="javascript">
+	
+	// Part 4: Filter by genre
+	function change_genreDisplay(selectedGenre)
+	{
+		var text = "";
+		for(i in setlist)
+		{
+			song = setlist[i];
+			
+			if(song["Genre"] == selectedGenre)
+				{
+				title = song["Song Title"];
+				artist = song["Artist"];
+				genre = song["Genre"];
+				year = song["Year"];
+				text += title + "<br>" + artist + "<br>" + genre + "<br>" + year + "<br> <br>";
+				}
+		}
+		
+		document.getElementById("display").innerHTML = text;
+		text = "";
+	}
+
+	</script>
+		
+	<p id="display"></p>
+	
+	
+	
+
+	
 </body>
 </html>
